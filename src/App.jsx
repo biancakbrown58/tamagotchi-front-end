@@ -1,11 +1,12 @@
 import React from 'react'
 import { Link, Route, Switch } from 'react-router-dom'
+import { Tamagotchi } from './components/Tamagotchi'
 
 export function App() {
   return (
     <>
       <header>
-        <h1>Welcome to my SPA</h1>
+        <h1>Tamagotchi!</h1>
         <nav>
           <ul>
             <li>
@@ -23,6 +24,11 @@ export function App() {
       <Switch>
         <Route exact path="/">
           Home
+          <ul>
+            <li>One Tamagotchi</li>
+            <li>Two Tamagotchi</li>
+            <Tamagotchi />
+          </ul>
         </Route>
         <Route exact path="/1">
           Page 1
